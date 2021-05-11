@@ -23,6 +23,10 @@
     .mainHero {
       margin-top: 200px;
 
+      @media only screen and (max-width: $breakpoint-phone) {
+        margin-top: 100px;
+      }
+
       .heroTitle {
         @include h1;
         color: $black;

@@ -1,4 +1,19 @@
 const copy = {
+  navbar: {
+    aboutMe: {
+      title: "About Me",
+    },
+    experience: {
+      title: "Experience",
+    },
+    project: {
+      title: "Projects",
+    },
+    resume: {
+      title: "Resume",
+      link: "https://www.google.com/",
+    },
+  },
   hero: {
     title: "Hi, I’m <em>Yeshu Jain</em> 👋🏼",
     blurb:

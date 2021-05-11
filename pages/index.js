@@ -1,11 +1,14 @@
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 
+import Navbar from "../components/navbar";
+
 import copy from "../copy/home";
 
 export default function Home() {
   return (
     <div className={styles.container}>
+      <Navbar />
       <div className={styles.mainContainer}>
         <section>
           <div className={styles.mainHero}>

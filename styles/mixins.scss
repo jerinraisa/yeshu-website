@@ -60,6 +60,10 @@
 @mixin p3 {
   font-size: 0.938rem;
   line-height: 1;
+
+  @media only screen and (max-width: $breakpoint-phone) {
+    font-size: 0.9rem;
+  }
 }
 
 @mixin sectionTitle {
