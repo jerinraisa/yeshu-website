@@ -1,0 +1,81 @@
+@import "fonts.scss";
+
+// typography
+@mixin h1 {
+  letter-spacing: -0.001rem;
+  font-size: 4.3rem;
+  line-height: 1;
+
+  @media (max-width: $breakpoint-tablet) {
+    font-size: 3rem;
+  }
+
+  @media (max-width: $breakpoint-phone) {
+    font-size: 1.75rem;
+  }
+}
+
+@mixin h2 {
+  font-size: 1.9rem;
+  line-height: 2.563rem;
+
+  @media (max-width: $breakpoint-tablet) {
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: $breakpoint-phone) {
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+}
+
+@mixin h5 {
+  letter-spacing: -0.001rem;
+  font-size: 1.6rem;
+  line-height: 2.125rem;
+
+  @media (max-width: $breakpoint-tablet) {
+    font-size: 1rem;
+  }
+}
+
+@mixin p1 {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+@mixin p2 {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+
+  @media (max-width: $breakpoint-tablet) {
+    font-size: 1rem;
+  }
+
+  @media (max-width: $breakpoint-phone) {
+    font-size: 0.9rem;
+  }
+}
+
+@mixin p3 {
+  font-size: 0.938rem;
+  line-height: 1;
+}
+
+@mixin sectionTitle {
+  font-size: 2.5rem;
+  line-height: 1;
+  padding-bottom: 3.125rem;
+  font-weight: 500;
+
+  @media (max-width: $breakpoint-tablet) {
+    font-size: 1.75rem;
+    padding-bottom: 3rem;
+  }
+
+  @media (max-width: $breakpoint-phone) {
+    font-size: 1rem;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+  }
+}

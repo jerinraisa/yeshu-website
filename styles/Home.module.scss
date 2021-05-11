@@ -1,0 +1,156 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10rem;
+
+    @media (max-width: $breakpoint-tablet) {
+      padding: 0 5rem;
+    }
+
+    @media (max-width: $breakpoint-phone) {
+      padding: 0 2rem;
+    }
+
+    .mainHero {
+      margin-top: 200px;
+
+      .heroTitle {
+        @include h1;
+        color: $black;
+        font-weight: bold;
+        margin-bottom: 1.25rem;
+
+        > em {
+          color: $wave-blue;
+          font-style: normal;
+        }
+      }
+
+      .heroDescription {
+        @include h2;
+        font-family: "Open Sans Light";
+        color: $black;
+        width: 60%;
+        font-weight: lighter;
+
+        @media (max-width: $breakpoint-tablet) {
+          width: 100%;
+        }
+      }
+    }
+
+    .divider {
+      align-self: center;
+      width: 95%;
+      height: 1px;
+      background: $input-border-grey;
+      opacity: 0.19;
+      margin: 7rem 0 9rem;
+
+      @media (max-width: $breakpoint-tablet) {
+        margin: 5rem 0 6rem;
+      }
+
+      @media (max-width: $breakpoint-phone) {
+        margin: 5rem 0 5rem;
+      }
+    }
+
+    .aboutMeContainer {
+      display: grid;
+      grid-template-columns: 0.7fr 0.3fr;
+      column-gap: 5.375rem;
+
+      @media (max-width: $breakpoint-tablet) {
+        grid-template-columns: 1fr;
+      }
+
+      .aboutMeText {
+        color: $black;
+        display: flex;
+        flex-direction: column;
+
+        .sectionTitle {
+          @include sectionTitle;
+        }
+
+        .sectionDescription {
+          @include p2;
+          font-family: "Open Sans Light";
+          font-weight: lighter;
+          width: 85%;
+
+          > em {
+            color: $wave-blue;
+            font-style: normal;
+          }
+
+          @media (max-width: $breakpoint-tablet) {
+            width: 100%;
+          }
+        }
+      }
+
+      .aboutMeImage {
+        display: flex;
+        align-items: center;
+        padding-right: 20px;
+
+        @media (max-width: $breakpoint-tablet) {
+          margin-top: 1.75rem;
+          padding-right: 0;
+          justify-content: center;
+        }
+      }
+    }
+
+    .recentExperience {
+      color: $black;
+
+      .sectionTitle {
+        @include sectionTitle;
+      }
+    }
+
+    .recentProjects {
+      color: $black;
+
+      .sectionTitle {
+        @include sectionTitle;
+      }
+    }
+
+    .footer {
+      color: $black;
+      padding-bottom: 10rem;
+
+      @media (max-width: $breakpoint-tablet) {
+        padding-bottom: 6rem;
+      }
+
+      .footerText {
+        width: 73%;
+        @include h5;
+        font-weight: 600;
+
+        > a {
+          color: $wave-blue;
+          text-decoration: underline;
+        }
+
+        @media (max-width: $breakpoint-tablet) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
