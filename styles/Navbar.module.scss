@@ -33,12 +33,11 @@
   width: 30rem;
 
   @media only screen and (max-width: $breakpoint-tablet) {
-    width: 20rem;
+    width: 25rem;
   }
 
   @media only screen and (max-width: $breakpoint-phone) {
-    width: auto;
-    flex-direction: column;
+    display: none;
   }
 
   .linkButton {

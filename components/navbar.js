@@ -4,10 +4,6 @@ import styles from "../styles/Navbar.module.scss";
 
 import copy from "../copy/home";
 
-function testFunction() {
-  return console.log("hi");
-}
-
 export default function Navbar() {
   return (
     <div className={styles.navContainer}>
@@ -17,15 +13,15 @@ export default function Navbar() {
         </div>
       </Link>
       <span className={styles.linksContainer}>
-        <button className={styles.linkButton} onClick={testFunction}>
+        <a className={styles.linkButton} href="#aboutMeSection">
           {copy.navbar.aboutMe.title}
-        </button>
-        <button className={styles.linkButton} onClick={testFunction}>
+        </a>
+        <a className={styles.linkButton} href="#experienceSection">
           {copy.navbar.experience.title}
-        </button>
-        <button className={styles.linkButton} onClick={testFunction}>
+        </a>
+        <a className={styles.linkButton} href="#projectsSection">
           {copy.navbar.project.title}
-        </button>
+        </a>
         <a
           className={styles.linkButton}
           href={copy.navbar.resume.link}

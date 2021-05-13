@@ -1,9 +1,15 @@
+import { useRef, useState } from "react";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 
 import Navbar from "../components/navbar";
 
 import copy from "../copy/home";
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 
 export default function Home() {
   return (
@@ -21,7 +27,7 @@ export default function Home() {
             <h3 className={styles.heroDescription}>{copy.hero.blurb}</h3>
           </div>
         </section>
-        <div className={styles.divider} />
+        <div id="aboutMeSection" className={styles.divider} />
         <section>
           <div className={styles.aboutMeContainer}>
             <div className={styles.aboutMeText}>
@@ -38,13 +44,13 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className={styles.divider} />
+        <div id="experienceSection" className={styles.divider} />
         <section>
           <div className={styles.recentExperience}>
             <div className={styles.sectionTitle}>{copy.experiences.title}</div>
           </div>
         </section>
-        <div className={styles.divider} />
+        <div id="projectsSection" className={styles.divider} />
         <section>
           <div className={styles.recentProjects}>
             <div className={styles.sectionTitle}>{copy.projects.title}</div>
@@ -59,6 +65,13 @@ export default function Home() {
                 __html: copy.footer.text,
               }}
             ></h5>
+          </div>
+        </section>
+        <section>
+          <div className={styles.scrollBack}>
+            <a className={styles.scrollBackText} onClick={topFunction}>
+              {copy.scrollBack.text} &#8593;
+            </a>
           </div>
         </section>
       </div>

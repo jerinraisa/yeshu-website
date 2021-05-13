@@ -33,6 +33,9 @@ const copy = {
   footer: {
     text: "Thanks for coming by, if you’re interested in hearing more about my work, interests, or simply nerd out about Lord of the Rings, check out my <a href='https://www.google.com/' target='_blank'>Linkedin</a>, <a href='https://www.google.com/' target='_blank'>Github</a>, or feel free to <a href='https://www.google.com/' target='_blank'>email</a> me! 👋🏼",
   },
+  scrollBack: {
+    text: "Scroll back to the top",
+  },
 };
 
 export default copy;
