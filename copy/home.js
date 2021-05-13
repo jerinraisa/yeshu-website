@@ -70,7 +70,7 @@ const copy = {
     },
   },
   footer: {
-    text: "Thanks for coming by, if you’re interested in hearing more about my work, interests, or simply nerd out about Lord of the Rings, check out my <a href='https://ca.linkedin.com/in/yeshu-jain/' target='_blank'>Linkedin</a>, <a href='https://github.com/yeshuj/' target='_blank'>Github</a>, or feel free to <a href='mailto:y5jain@uwaterloo.ca'>email</a> me! 👋🏼",
+    text: "Thanks for coming by, if you’re interested in hearing more about my work, interests, or simply nerd out about Lord of the Rings, check out my <a href='https://ca.linkedin.com/in/yeshu-jain/' target='_blank'>Linkedin</a>, <a href='https://github.com/yeshuj/' target='_blank'>Github</a>, or feel free to <a href='mailto:y5jain@uwaterloo.ca?Subject=Dope Website%20🌊!'>email</a> me! 👋🏼",
   },
   scrollBack: {
     text: "Scroll back to the top",
