@@ -2,12 +2,12 @@ $base-path: "/fonts/";
 
 @font-face {
   font-family: "Open Sans";
-  src: url("#{$base-path}OpenSans-Regular.ttf") format("ttf");
+  src: url("#{$base-path}Open_Sans/OpenSans-Regular.ttf") format("ttf");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Open Sans Light";
-  src: url("#{$base-path}OpenSans-Light.ttf") format("ttf");
+  src: url("#{$base-path}Open_Sans/OpenSans-Light.ttf") format("ttf");
   font-display: swap;
 }
