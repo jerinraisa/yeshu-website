@@ -42,6 +42,10 @@
 @mixin p1 {
   font-size: 1.25rem;
   line-height: 1;
+
+  @media (max-width: $breakpoint-tablet) {
+    font-size: 1rem;
+  }
 }
 
 @mixin p2 {
@@ -49,10 +53,6 @@
   line-height: 1.5rem;
 
   @media (max-width: $breakpoint-tablet) {
-    font-size: 1rem;
-  }
-
-  @media (max-width: $breakpoint-phone) {
     font-size: 0.9rem;
   }
 }

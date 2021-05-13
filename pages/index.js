@@ -1,8 +1,9 @@
-import { useRef, useState } from "react";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 
 import Navbar from "../components/navbar";
+import Experience from "../components/experience";
+import Project from "../components/projects";
 
 import copy from "../copy/home";
 
@@ -46,15 +47,11 @@ export default function Home() {
         </section>
         <div id="experienceSection" className={styles.divider} />
         <section>
-          <div className={styles.recentExperience}>
-            <div className={styles.sectionTitle}>{copy.experiences.title}</div>
-          </div>
+          <Experience />
         </section>
         <div id="projectsSection" className={styles.divider} />
         <section>
-          <div className={styles.recentProjects}>
-            <div className={styles.sectionTitle}>{copy.projects.title}</div>
-          </div>
+          <Project />
         </section>
         <div className={styles.divider} />
         <section>
