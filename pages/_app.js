@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="shortcut icon" href="/favicon.ico" />
         <meta
           property="og:image"
-          content={"https://yeshu-website.vercel.app/images/yeshu-image.png"}
+          content={"https://yeshu-website.vercel.app/images/shareImage.jpg"}
         />
       </Head>
       <Component {...pageProps} />
