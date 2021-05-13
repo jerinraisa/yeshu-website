@@ -11,7 +11,7 @@ const copy = {
     },
     resume: {
       title: "Resume",
-      link: "https://www.google.com/",
+      link: "https://drive.google.com/file/d/1FQ5w-bp3kQ4Q4yY3b_HIJrRCNZEoXmnS/view",
     },
   },
   hero: {

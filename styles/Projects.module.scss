@@ -83,6 +83,11 @@
       @include p2;
       font-weight: 300;
       color: $black;
+      width: 80%;
+
+      @media (max-width: $breakpoint-tablet) {
+        width: 100%;
+      }
     }
   }
 }
