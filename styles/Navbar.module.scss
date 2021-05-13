@@ -4,10 +4,14 @@
 .navContainer {
   display: flex;
   top: 0;
+  position: sticky;
+  background-color: $white;
   justify-content: space-between;
-  padding: 3.75rem 6rem 0;
+  padding: 1.5rem 6rem 1.5rem;
   width: 100vw;
   align-content: center;
+  z-index: 10;
+  border-bottom: 2px solid $wave-blue;
 
   @media only screen and (max-width: $breakpoint-tablet) {
     padding: 3.75rem 5rem 0;
