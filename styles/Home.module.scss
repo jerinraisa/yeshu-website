@@ -158,14 +158,14 @@
     }
 
     .scrollBack {
+      width: fit-content;
       cursor: pointer;
       align-content: flex-end;
       color: $wave-blue;
       padding-bottom: 3rem;
 
       .scrollBackText {
-        @include p2;
-        font-weight: 600;
+        @include p3;
       }
     }
   }
