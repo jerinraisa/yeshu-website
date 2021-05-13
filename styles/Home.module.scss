@@ -5,6 +5,7 @@
 .container {
   display: flex;
   flex-direction: column;
+  font-family: "Open Sans";
 
   .mainContainer {
     display: flex;
@@ -30,8 +31,8 @@
       .heroTitle {
         @include h1;
         color: $black;
-        font-weight: bold;
         margin-bottom: 1.25rem;
+        font-family: "Open Sans Bold";
 
         > em {
           color: $wave-blue;
@@ -44,7 +45,6 @@
         font-family: "Open Sans Light";
         color: $black;
         width: 60%;
-        font-weight: lighter;
 
         @media (max-width: $breakpoint-tablet) {
           width: 100%;
@@ -85,12 +85,12 @@
 
         .sectionTitle {
           @include sectionTitle;
+          font-family: "Open Sans SemiBold";
         }
 
         .sectionDescription {
           @include p2;
-          font-family: "Open Sans Light";
-          font-weight: lighter;
+          font-family: "Open Sans";
           width: 85%;
 
           > em {
@@ -117,14 +117,6 @@
       }
     }
 
-    .recentProjects {
-      color: $black;
-
-      .sectionTitle {
-        @include sectionTitle;
-      }
-    }
-
     .footer {
       color: $black;
       padding-bottom: 10rem;
@@ -136,7 +128,7 @@
       .footerText {
         width: 73%;
         @include h5;
-        font-weight: 600;
+        font-family: "Open Sans SemiBold";
 
         > a {
           color: $wave-blue;

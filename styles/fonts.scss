@@ -2,12 +2,36 @@ $base-path: "/fonts/";
 
 @font-face {
   font-family: "Open Sans";
-  src: url("#{$base-path}Open_Sans/OpenSans-Regular.ttf") format("ttf");
+  src: url("#{$base-path}Open_Sans/OpenSans-Regular.ttf") format("ttf"),
+    url("#{$base-path}Open_Sans/OpenSans-Regular.woff2") format("woff2"),
+    url("#{$base-path}Open_Sans/OpenSans-Regular.woff") format("woff"),
+    url("#{$base-path}Open_Sans/OpenSans-Regular.otf") format("otf");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Open Sans Light";
-  src: url("#{$base-path}Open_Sans/OpenSans-Light.ttf") format("ttf");
+  src: url("#{$base-path}Open_Sans/OpenSans-Light.ttf") format("ttf"),
+    url("#{$base-path}Open_Sans/OpenSans-Light.woff2") format("woff2"),
+    url("#{$base-path}Open_Sans/OpenSans-Light.woff") format("woff"),
+    url("#{$base-path}Open_Sans/OpenSans-Light.otf") format("otf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans SemiBold";
+  src: url("#{$base-path}Open_Sans/OpenSans-SemiBold.ttf") format("ttf"),
+    url("#{$base-path}Open_Sans/OpenSans-SemiBold.woff2") format("woff2"),
+    url("#{$base-path}Open_Sans/OpenSans-SemiBold.woff") format("woff"),
+    url("#{$base-path}Open_Sans/OpenSans-SemiBold.otf") format("otf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("#{$base-path}Open_Sans/OpenSans-Bold.ttf") format("ttf"),
+    url("#{$base-path}Open_Sans/OpenSans-Bold.woff2") format("woff2"),
+    url("#{$base-path}Open_Sans/OpenSans-Bold.woff") format("woff"),
+    url("#{$base-path}Open_Sans/OpenSans-Bold.otf") format("otf");
   font-display: swap;
 }

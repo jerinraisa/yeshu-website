@@ -8,6 +8,7 @@
   .sectionTitle {
     @include sectionTitle;
     margin-bottom: 5rem;
+    font-family: "Open Sans SemiBold";
 
     @media (max-width: $breakpoint-tablet) {
       margin-bottom: 3rem;
@@ -71,12 +72,13 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    font-family: "Open Sans";
 
     span {
       @include p1;
-      font-weight: 550;
       margin-bottom: 0.75rem;
       color: $black;
+      font-family: "Open Sans SemiBold";
     }
 
     p {

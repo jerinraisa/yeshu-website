@@ -30,7 +30,7 @@ const copy = {
       watonomous: {
         title: "Watonomous — Software Developer",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "I am working on vehicle localization in the Path Planning Team for Watonomous. Currently working towards the year 4 competition conducted by SAE. I used Kalman filters in a ROS node to fuse sensor data and get a better estimate for vehicle's position and orientation.",
       },
       intel: {
         title: "Intel — Software Developer Intern/Co-op",
@@ -55,22 +55,22 @@ const copy = {
       hairMeOut: {
         title: "Hair Me Out — Hack the North",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "For Hack the North 2020, we built a web app that allows people to log in using Facebook and then determines the face shape of a person. Once the face shape is determined, it recommends one of the trendy fashionable hairstyles for the user to try to get them tinder matches.",
       },
       riscV: {
         title: "RISC-V Processor Architecture  — Academic Course: ECE 320",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "For my Computer Architecture course at University of Waterloo (ECE 320), we built a 5 stage RISC-V pipeline in Verilog. It supported all 32 bit RISC-V instructions including Branches and Jumps.",
       },
       controller: {
         title: "XY Platform Motion Controller — Academic Course: ECE 298",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "For our Instrumentation and Prototyping Laboratory, we designed a XY platform controller that took X-Y coordinates through a keyboard input and rotated stepper motors to move to the given coordinates. Designed a schematic and PCB using diptrace for the same.",
       },
     },
   },
   footer: {
-    text: "Thanks for coming by, if you’re interested in hearing more about my work, interests, or simply nerd out about Lord of the Rings, check out my <a href='https://www.google.com/' target='_blank'>Linkedin</a>, <a href='https://www.google.com/' target='_blank'>Github</a>, or feel free to <a href='https://www.google.com/' target='_blank'>email</a> me! 👋🏼",
+    text: "Thanks for coming by, if you’re interested in hearing more about my work, interests, or simply nerd out about Lord of the Rings, check out my <a href='https://ca.linkedin.com/in/yeshu-jain/' target='_blank'>Linkedin</a>, <a href='https://github.com/yeshuj/' target='_blank'>Github</a>, or feel free to <a href='mailto:y5jain@uwaterloo.ca'>email</a> me! 👋🏼",
   },
   scrollBack: {
     text: "Scroll back to the top",
