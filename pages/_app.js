@@ -8,6 +8,10 @@ function MyApp({ Component, pageProps }) {
         <title>Yeshu Jain</title>
         <meta name="description" content="Yeshu's Personal Site" />
         <link rel="shortcut icon" href="/favicon.ico" />
+        <meta
+          property="og:image"
+          content={"https://www.yeshuj.com/images/yeshu-image.png"}
+        />
       </Head>
       <Component {...pageProps} />
     </div>
