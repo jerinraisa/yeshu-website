@@ -10,7 +10,20 @@ function MyApp({ Component, pageProps }) {
         <link rel="shortcut icon" href="/favicon.ico" />
         <meta
           property="og:image"
-          content={"https://yeshu-website.vercel.app/images/shareImage.jpg"}
+          content={"https://yeshuj.com/images/shareImage.jpg"}
+        />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-J84KRMMXVP%22%3E"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-J84KRMMXVP');    `,
+          }}
         />
       </Head>
       <Component {...pageProps} />
