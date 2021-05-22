@@ -13,12 +13,17 @@
   z-index: 10;
   border-bottom: 2px solid $wave-blue;
 
+  &.disableMobile {
+    position: relative;
+  }
+
   @media only screen and (max-width: $breakpoint-tablet) {
     padding: 2rem 5rem 2rem;
   }
 
   @media only screen and (max-width: $breakpoint-phone) {
     padding: 2rem 2rem 1.5rem;
+    justify-content: space-between;
   }
 
   .navHover {
@@ -28,15 +33,13 @@
 
 .linksContainer {
   display: flex;
-  justify-content: space-between;
+  right: 0;
   width: 30rem;
+  justify-content: space-between;
 
   @media only screen and (max-width: $breakpoint-tablet) {
     width: 25rem;
-  }
-
-  @media only screen and (max-width: $breakpoint-phone) {
-    display: none;
+    justify-content: flex-end;
   }
 
   .linkButton {
@@ -50,6 +53,10 @@
     border-radius: 5px;
     width: 6rem;
 
+    &.disableMobile {
+      display: none;
+    }
+
     @include p3;
     font-family: "Open Sans SemiBold";
     color: $wave-blue;
@@ -58,15 +65,7 @@
 
     @media only screen and (max-width: $breakpoint-phone) {
       margin-bottom: 0.5rem;
-      width: 5rem;
-    }
-
-    @media (hover: hover) {
-      :hover {
-        transition: all 0.3s ease-in-out;
-        color: $white;
-        background-color: $black;
-      }
+      padding: 0;
     }
   }
 }

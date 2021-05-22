@@ -1,25 +1,58 @@
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import classnames from "classnames";
+
 import styles from "../styles/Navbar.module.scss";
 
 import copy from "../copy/home";
 
 export default function Navbar() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (
+      /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      )
+    ) {
+      setIsMobile(true);
+    }
+  }, []);
   return (
-    <div className={styles.navContainer}>
+    <div
+      className={classnames(styles.navContainer, {
+        [styles.disableMobile]: isMobile,
+      })}
+    >
       <Link href={`/`}>
         <div className={styles.navHover}>
           <Image src={"/svgs/YJ.svg"} height={26} width={26} />
         </div>
       </Link>
       <span className={styles.linksContainer}>
-        <a className={styles.linkButton} href="#aboutMeSection">
+        <a
+          className={classnames(styles.linkButton, {
+            [styles.disableMobile]: isMobile,
+          })}
+          href="#aboutMeSection"
+        >
           {copy.navbar.aboutMe.title}
         </a>
-        <a className={styles.linkButton} href="#experienceSection">
+        <a
+          className={classnames(styles.linkButton, {
+            [styles.disableMobile]: isMobile,
+          })}
+          href="#experienceSection"
+        >
           {copy.navbar.experience.title}
         </a>
-        <a className={styles.linkButton} href="#projectsSection">
+        <a
+          className={classnames(styles.linkButton, {
+            [styles.disableMobile]: isMobile,
+          })}
+          href="#projectsSection"
+        >
           {copy.navbar.project.title}
         </a>
         <a

@@ -13,10 +13,17 @@ export default function Project() {
           <div className={styles.stepIconLine}></div>
         </div>
         <section className={styles.step}>
-          <div className={styles.stepContent}>
-            <span>{copy.projects.projectContent.hairMeOut.title}</span>
-            <p>{copy.projects.projectContent.hairMeOut.description}</p>
-          </div>
+          <a
+            href={
+              "https://devpost.com/software/hear-me-out-hykmc7?fbclid=IwAR3H05nwfTbdAxHsRggcfI4f3HpZmmOy8PUCwdEEV6qosOipJBEPliPRXdU"
+            }
+            target={"_blank"}
+          >
+            <div className={styles.stepContent}>
+              <span>{copy.projects.projectContent.hairMeOut.title}</span>
+              <p>{copy.projects.projectContent.hairMeOut.description}</p>
+            </div>
+          </a>
         </section>
         <div className={styles.stepIconWrapper}>
           <div className={styles.stepIconCircle}></div>
